@@ -4911,7 +4911,7 @@ MonoBehaviour:
   suspensionDistance: 0.15
   suspensionAnchor: 0.5
   springRate: 53000
-  damperRate: 3000
+  damperRate: 3100
   suspensionTransform: {fileID: 0}
   caliperTransform: {fileID: 6883675569877337875}
   wheelTransform: {fileID: 8926012632199083684}
@@ -5105,7 +5105,7 @@ MonoBehaviour:
   gearShiftButton: Fire2
   gearModeSelectButton: Fire3
   keyboardNumbersSelectGears: 1
-  neutralGear: 110
+  neutralGear: 32
   reverseGear: 0
   disableSteerInput: 0
   disableThrottleInput: 0
@@ -5904,7 +5904,7 @@ MonoBehaviour:
   suspensionDistance: 0.15
   suspensionAnchor: 0.5
   springRate: 53000
-  damperRate: 3000
+  damperRate: 3100
   suspensionTransform: {fileID: 0}
   caliperTransform: {fileID: 4273252464705844241}
   wheelTransform: {fileID: 7537363011832195554}
@@ -6058,7 +6058,7 @@ MonoBehaviour:
   suspensionDistance: 0.15
   suspensionAnchor: 0.5
   springRate: 53000
-  damperRate: 3000
+  damperRate: 3100
   suspensionTransform: {fileID: 0}
   caliperTransform: {fileID: 462561942211291436}
   wheelTransform: {fileID: 680050491760995740}
@@ -6886,15 +6886,15 @@ MonoBehaviour:
   integrationUseRK4: 0
   centerOfMass: {fileID: 510077755074553099}
   tireSideDeflection: 1
-  tireSideDeflectionRate: 10
+  tireSideDeflectionRate: 20
   tireAdherentImpulseRatio: 0.5
-  wheelSleepVelocity: 0.1
+  wheelSleepVelocity: 0.2
   advancedSuspensionDamper: 1
-  suspensionDamperLimitFactor: 2
+  suspensionDamperLimitFactor: 2.2
   contactAngleAffectsTireForce: 1
-  dontAdjustSuspensionForcePoint: 1
-  disableSteerAngleFix: 1
-  disableWheelReferenceFrameFix: 1
+  dontAdjustSuspensionForcePoint: 0
+  disableSteerAngleFix: 0
+  disableWheelReferenceFrameFix: 0
   scaleFactor: 1
   vehicleSleepCriteria: 0
   showContactGizmos: 1
@@ -6997,21 +6997,21 @@ MonoBehaviour:
     ratioReference: {fileID: 0}
   brakes:
     maxBrakeTorque: 2800
-    brakeBias: 0.828
+    brakeBias: 0.68
     handbrakeTorque: 1500
     handbrakeAxle: 0
-    combinedRetarderBrake: 0
+    combinedRetarderBrake: 1
     fullBrakeThreshold: 0.8
   tireFriction:
     model: 3
     settings:
       adherentFriction: 0.8
-      peak: {x: 0.92, y: 2.06}
-      limit: {x: 8.2, y: 1.68}
-      a: 0.5
+      peak: {x: 2, y: 1.2}
+      limit: {x: 12, y: 0.95}
+      a: 0.6
       b: 0
       c: 0
-      d: 0.483
+      d: 0.1
       A: 0.95
       B: 0.8
       C: 1.5
@@ -7021,14 +7021,14 @@ MonoBehaviour:
     frictionMultiplier: 1
     maxAdherentSpeed: 6.388889
   engine:
-    idleRpm: 2280
-    peakRpm: 5000
-    maxRpm: 7000
-    idleRpmTorque: 282
-    peakRpmTorque: 288
+    idleRpm: 1100
+    peakRpm: 8336
+    maxRpm: 9000
+    idleRpmTorque: 106
+    peakRpmTorque: 188
     idleRpmCurveBias: 0.95700055
     peakRpmCurveBias: 0
-    inertia: 0.1
+    inertia: 0.15
     frictionTorque: 20
     rotationalFriction: 0.06
     viscousFriction: 0.007
@@ -7046,9 +7046,9 @@ MonoBehaviour:
     stallBias: 0.8
     stalledFrictionTorque: 25
     starterMotorBias: 0.8
-    maxFuelPerRev: 0.2
-    fuelDensity: 0.75
-    fuelConsumptionCorrection: 3.8
+    maxFuelPerRev: 0.16
+    fuelDensity: 0.745
+    fuelConsumptionCorrection: 3.6
   clutch:
     type: 3
     maxTorqueTransfer: 280
@@ -7066,16 +7066,16 @@ MonoBehaviour:
     - 0.843
     reverseGearRatios:
     - -3.564
-    auto2ndGearMinSpeed: 10
-    parkRequiresStopAndBrakes: 1
-    allowParkInManual: 1
+    auto2ndGearMinSpeed: 50
+    parkRequiresStopAndBrakes: 0
+    allowParkInManual: 0
     manualShiftTime: 0.15
     autoShift: 1
     autoShiftNeutralRpm: 1200
     autoShiftFirstGearRpm: 3000
     autoShiftDownRevs: 3400
     autoShiftUpRevs: 6500
-    autoShiftThrottleSens: 0
+    autoShiftThrottleSens: 1
     autoShiftThrottleSensMin: 0.6
     autoShiftFullThrottleDownRevs: 3000
     autoShiftFullThrottleUpRevs: 4500
@@ -7125,7 +7125,7 @@ MonoBehaviour:
     maxBrakeTorque: 1000
   engineReactionFactor: 1
   parkModeReactionFactor: 0.95
-  maxSubsystemsEnergy: 10000
+  maxSubsystemsEnergy: 100000
   "\u202A\u206C\u202D\u206D\u200B\u206E\u202B\u202B\u202D\u206D\u206B\u200E\u206B\u202C\u206B\u202C\u202B\u206F\u202C\u200F\u202B\u202C\u202C\u200B\u206C\u206E\u202A\u202B\u200B\u200B\u200F\u200D\u206F\u202C\u200C\u206F\u202D\u206E\u206D\u206A\u202E": 1
 --- !u!4 &7363828121401114133
 Transform:
@@ -7200,7 +7200,7 @@ MonoBehaviour:
   suspensionDistance: 0.15
   suspensionAnchor: 0.5
   springRate: 53000
-  damperRate: 3000
+  damperRate: 3100
   suspensionTransform: {fileID: 0}
   caliperTransform: {fileID: 1539812297661492657}
   wheelTransform: {fileID: 2220044970503414265}

@@ -61,6 +61,11 @@ public class GameRules : MonoBehaviour
         }
     }
 
+    public void ChangeCarSettings()
+    {
+        //
+    }
+
     public void Win()
     {
         WinPanel.SetActive(true);

@@ -260,7 +260,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u0417\u0430\u043D\u043E\u0432\u043E(G)"
+  m_text: "\u0417\u0430\u043D\u043E\u0432\u043E(R)"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -870,8 +870,8 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 760905330}
   - {fileID: 629307853}
+  - {fileID: 760905330}
   - {fileID: 784835762}
   m_Father: {fileID: 847994278}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4502,7 +4502,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelNumber: 1
   WinPanel: {fileID: 991729280}
-  RestartPanel: {fileID: 629307849}
+  RestartPanel: {fileID: 463476258}
   CameraCtrl: {fileID: 1709287716}
   CarClrC: {fileID: 1709287717}
   Platforms: {fileID: 525457350577269975}
@@ -6911,7 +6911,7 @@ MonoBehaviour:
     inertiaRow2: {x: 0, y: 0, z: 400}
   steeringAids:
     priority: 1
-    helpMode: 0
+    helpMode: 1
     helpRatio: 1
     helpGravity: 0.4
     limitMode: 2

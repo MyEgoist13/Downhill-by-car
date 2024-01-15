@@ -72,7 +72,7 @@ public class GameRules : MonoBehaviour
         gameWork = false;
     }
 
-    public void GameOverF()
+    public void GameOver()
     {
         RestartPanel.SetActive(true);
         gameWork = false;
@@ -95,15 +95,10 @@ public class GameRules : MonoBehaviour
         {
             if(Input.GetKeyUp(KeyCode.F))
             {
+                Time.timeScale = 0f;
                 GotoMenu();
             }
         }
-
-        if(Input.GetKeyUp(KeyCode.K))
-        {
-            GameOverF();
-        }
-
         
     }
     /*IEnumerator LoadingTimer()

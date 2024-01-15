@@ -6,6 +6,11 @@ public class StartMenu : MonoBehaviour
     public GameRules gr;
     public GameObject LevelsPanel, CarChooser, redModelCar;
 
+    private void Start()
+    {
+        Time.timeScale = 1f;
+    }
+
     public void ChooseLevel(int lvlNum)
     {
         gr.levelNumber = lvlNum;

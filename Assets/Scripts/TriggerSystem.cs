@@ -19,7 +19,7 @@ public class TriggerSystem : MonoBehaviour
         if(TriggerType == 1)
         {
             if(other.gameObject.tag == "CarCollider"){
-                gr.GameOverF();
+                gr.GameOver();
             }
         } else if(TriggerType == 2)
         {
